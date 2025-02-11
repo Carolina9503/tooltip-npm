@@ -1,0 +1,25 @@
+{
+  "name": "tooltip-prueba",
+  "version": "1.0.0",
+  "description": "Un tooltip de prueba para mi paquete npm",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "author": "carocodedaza",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "keywords": [],
+  
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}
